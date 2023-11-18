@@ -1,0 +1,100 @@
+html, body {
+  width: 200px; /* 팝업 창의 가로 크기 조절 */
+  height: 250px; /* 팝업 창의 세로 크기 조절 */
+  margin: 0;
+  padding: 0;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+
+.popup-container {
+  text-align: center;
+  padding: 10px;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    width: 20px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.extension-title, .suspicious-accounts {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.description, .filter-status {
+    font-size: 10px;
+}
+
+label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+  
+  [type="checkbox"] {
+    appearance: none;
+    position: relative;
+    border: max(2px, 0.1em) solid gray;
+    border-radius: 1.75em; /* 크기 조절 */
+    width: 3.5em; /* 크기 조절 */
+    height: 2em; /* 크기 조절 */
+  }
+  
+  [type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 1.7em; /* 크기 조절 */
+    height: 1.7em; /* 크기 조절 */
+    border-radius: 50%;
+    transform: scale(0.8);
+    background-color: gray;
+    transition: left 250ms linear;
+  }
+  
+  [type="checkbox"]:checked {
+    background-color: #E89046;
+    border-color: #E89046;
+  }
+  
+  [type="checkbox"]:checked::before {
+    background-color: white;
+    left: 1.5em; /* 크기 조절 */
+  }
+  
+  [type="checkbox"]:focus-visible {
+    outline-offset: max(2px, 0.1em);
+    outline: max(2px, 0.1em) solid #E89046;
+  }
+  
+  [type="checkbox"]:enabled:hover {
+    box-shadow: 0 0 0 max(4px, 0.2em) lightgray;
+  }
+  
+  fieldset {
+    border: none;
+    /* display: flex; */
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center; /* 가운데 정렬을 위한 추가 스타일 */
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  
+  
