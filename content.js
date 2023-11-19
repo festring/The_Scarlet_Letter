@@ -27,6 +27,7 @@ const observer = new MutationObserver(() => {
   if (JSON.stringify(prevMemberIdArray) !== JSON.stringify(memberIdArray)) {
     console.log(memberIdArray);
 		// 이곳에 전송 코드 넣기
+    
   }
 
   // 이전 값 갱신
