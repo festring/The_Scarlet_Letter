@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Checkbox Extension",
+    "version": "1.0",
+    "permissions": [
+      "storage",
+      "activeTab"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js","output.js"],
+        "run_at": "document_end"
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  
