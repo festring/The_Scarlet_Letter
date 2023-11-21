@@ -28,7 +28,7 @@
 ### 서버
 1. 파이썬 및 node.js 설치
 2. cd test1 으로 디렉토리 변경
-3. test1환경에서 npm init  npm install 진행 (puppeteer, axios, express, cors 설치)
+3. test1환경에서 npm install 진행 (puppeteer, axios, express, cors 설치)
 4. python -u flask/app.py
 5. 새로운 터미널창을 열고 cd test1 으로 디렉토리 변경
 6. node app.js
