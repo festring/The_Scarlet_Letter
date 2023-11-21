@@ -7,7 +7,7 @@ from sklearn.decomposition import PCA
 from sklearn.neighbors import KNeighborsClassifier
 import time
 # Specify the file path
-file_path = "/Users/festring/Desktop/TSL/test1/flask/for_knn.csv"
+file_path = "flask/for_knn.csv"
 
 # Read the CSV file into a DataFrame
 data = pd.read_csv(file_path)
