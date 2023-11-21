@@ -58,7 +58,7 @@ function applyStyles(targetElement, styleValue) {
   imageElement.style.marginRight = '15px'; // Adjusted margin for spacing
   imageElement.style.marginLeft = '5px'; // Additional left margin for the image
   imageElement.style.display = 'block'; // Ensure block-level element behavior
-  imageElement.src = 'https://raw.githubusercontent.com/festring/The_Scarlet_Letter/main/icon.png'; // Source for imageElement
+  imageElement.src = 'https://blog.kakaocdn.net/dn/nc9Dm/btsAy6kEwNa/bu3A7yJLbKYWiAgtdUXujk/img.png'; // Source for imageElement
 
   const textElement = document.createElement('div');
   textElement.style.fontFamily = 'Nanum Gothic';
