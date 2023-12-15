@@ -6,22 +6,8 @@ import pandas as pd
 from sklearn.decomposition import PCA
 from sklearn.neighbors import KNeighborsClassifier
 import time
-# Specify the file path
-file_path = "flask/for_knn.csv"
-
-# Read the CSV file into a DataFrame
-data = pd.read_csv(file_path)
-
-# Print the DataFrame
-# print(data)
-X = data.iloc[:, 0:5]
-y = data.iloc[:, 5]
-
-pca = PCA(n_components=4)
-X_pca = pca.fit_transform(X)
-
-neigh = KNeighborsClassifier(n_neighbors=1)
-neigh.fit(X_pca, y)
+neigh = joblib.load('The_Scarlet_Letter/test1/flask/knn_model.pkl')
+pca = joblib.load('The_Scarlet_Letter/test1/flask/pca_model.pkl')
 
 
 app = Flask(__name__)
